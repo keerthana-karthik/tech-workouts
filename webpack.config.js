@@ -1,18 +1,35 @@
 var path = require('path');
-var webpack = require('webpack');
 
 module.exports = {
-  entry: './index',
+  entry: {
+    javascript: "./index.js",
+    html: "./index.html"
+  },
   output: {
-    path: __dirname,
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   module: {
+    preLoaders: [
+      {
+        test: /\.js$/, 
+        loader: "eslint-loader", 
+        exclude: /node_modules/
+      }
+    ],
     loaders: [
+      { 
+        test: /\.html/, 
+        loader: 'file?name=[name].[ext]' 
+      },
       {
         test: '/\.css/',
         loader: 'style!css'
-      }, { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
+      }, { 
+        test: /\.js$/, 
+        loaders: ['react-hot', 'babel-loader'], 
+        exclude: /node_modules/ 
+      }
     ]
   }
 }
