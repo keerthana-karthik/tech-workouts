@@ -17,7 +17,9 @@ const Header = ({ menus }) => (
     </ul>
   </header>
 )
+
 Header.propTypes = {
   menus: React.PropTypes.array.isRequired
 };
+
 export default Header
