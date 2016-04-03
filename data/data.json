@@ -1,3 +1,14 @@
 {
-  "text": "You Rock!"
+  "text": "You Rock!",
+  "skills": [{
+      "id": 1,
+      "name": "javascript",
+      "workout": [
+        {
+          "id": "11",
+          "title": "Version",
+          "description": "The current version of javascript is called ES6"
+        }
+      ]
+    }]
 }
