@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --progress --colors --hot --inline",
-    "build": "npm run lint && webpack",
+    "build": "npm run lint && rm -rf dist && webpack",
     "lint": "eslint ."
   },
   "repository": {
