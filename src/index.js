@@ -12,7 +12,7 @@ import routes from 'routes/index'
 
 //Styles
 import 'bootstrap-loader'
-//import 'styles/common.scss'
+import 'styles/common.scss'
 
 let fullRoutes = routes();
 
