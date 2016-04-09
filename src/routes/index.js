@@ -2,7 +2,7 @@ import 'babel-polyfill'
 import React from 'react'
 import { Route } from 'react-router'
 //Containers (layouts)
-import MainLayout from 'layouts/main']
+import MainLayout from 'layouts/main'
 import WorkoutContainer from 'containers/workouts'
 import WorkoutTech from 'containers/WorkoutTech'
 import SocialMediaContainer from 'containers/socialMediaContainer'
