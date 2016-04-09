@@ -3,10 +3,6 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 // User Components
-<<<<<<< HEAD
-=======
-import Header from 'layouts/header'
->>>>>>> 9f5f9e90af91e4e74505d8835758356086e06e3d
 import WorkoutCard from  'components/workout-card'
 
 // Actions for the component
@@ -21,16 +17,8 @@ export class Workouts extends Component {
     this.props.dispatch(load_workout_cards());
   }
   render() {
-<<<<<<< HEAD
     return (
     <div className = 'container'>
-=======
-    // Fix me: Load menus from config
-    let menus = ['Workout', 'Read', 'Social'];
-    return (
-    <div className = 'container'>
-      <Header menus = {menus} />
->>>>>>> 9f5f9e90af91e4e74505d8835758356086e06e3d
       <div>
         <h2 className = 'workout-title text-center'>Choose your workout for the day</h2>
       </div>
@@ -44,11 +32,7 @@ export class Workouts extends Component {
     </div>);
   }
 }
-<<<<<<< HEAD
 // Properties for the component
-=======
-
->>>>>>> 9f5f9e90af91e4e74505d8835758356086e06e3d
 Workouts.propTypes = {
   workouts: React.PropTypes.array.isRequired
 }

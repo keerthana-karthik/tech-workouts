@@ -39,8 +39,5 @@ export function load_workout_cards() {
         console.log('Error in API call ', error);
       })
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 9f5f9e90af91e4e74505d8835758356086e06e3d
+
