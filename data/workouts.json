@@ -1,0 +1,24 @@
+{
+  "workouts": [{
+    "id": 1,
+    "type": "javascript",
+    "name": "JavaScript",
+    "description": "One language to rule them all",
+    "subscribed": true,
+    "content": []
+    }, {
+    "id": 2,
+    "type": "css",
+    "name": "CSS",
+    "description": "Let's beautify the internet",
+    "subscribed": true,
+    "content": []
+    }, {
+    "id": 3,
+    "type": "html",
+    "name": "HTML",
+    "description": "Brick and Mortar of the web",
+    "subscribed": true,
+    "content": []
+    }]
+}
