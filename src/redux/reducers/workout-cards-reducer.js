@@ -40,3 +40,4 @@ export function load_workout_cards() {
       })
   }
 }
+

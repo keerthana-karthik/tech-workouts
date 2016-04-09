@@ -1,10 +1,13 @@
-@import 'utils/constants.scss';
-
+@import 'utils/constants';
 .header {
   color: $secondary-color;
   .navbar {
     border-bottom: 2px solid #fff;
     border-radius: 0;
+    .active {
+      background: #eeeeee;
+      color:#000;
+    }
   }
   .navbar-brand {
     font-size: 2rem;

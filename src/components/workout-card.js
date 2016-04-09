@@ -1,5 +1,6 @@
 // Library
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 
 // Styles for the component
 import 'styles/workout-card.scss'
@@ -13,7 +14,7 @@ export default class WorkoutCard extends Component {
             <p className = 'text-center'>{this.props.description}</p>
           </div>
           <div className = 'card-footer'>
-            <a href='' className='text-center card-footer-btn'>Start this Workout</a>
+            <Link to = {'/workouts/' + this.props.type} className='text-center card-footer-btn'>Start this Workout</Link>
           </div>
       </div>
     )

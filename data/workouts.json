@@ -1,7 +1,7 @@
 {
   "workouts": [{
     "id": 1,
-    "type": "js",
+    "type": "javascript",
     "name": "JavaScript",
     "description": "One language to rule them all",
     "subscribed": true,

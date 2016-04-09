@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 // Styles
 import 'styles/header.scss'
@@ -19,9 +20,9 @@ const Header = ({ menus }) => (
 
         <div className = 'pull-right nav-bar' id = 'top-bar-menu'>
           <ul className = 'nav navbar-nav'>
-            {menus && menus.map((x, index) => (
+            {menus && menus.map((item, index) => (
              <li key = {index}>
-              <a href='#'>{x}</a>
+              <Link to = {item.href} activeClassName='active'>{item.name}</Link>
              </li>
             ))}
           </ul>
