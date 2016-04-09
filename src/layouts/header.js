@@ -20,9 +20,15 @@ const Header = ({ menus }) => (
 
         <div className = 'pull-right nav-bar' id = 'top-bar-menu'>
           <ul className = 'nav navbar-nav'>
+<<<<<<< HEAD
             {menus && menus.map((item, index) => (
              <li key = {index}>
               <Link to = {item.href} activeClassName='active'>{item.name}</Link>
+=======
+            {menus && menus.map((x, index) => (
+             <li key = {index}>
+              <a href='#'>{x}</a>
+>>>>>>> 9f5f9e90af91e4e74505d8835758356086e06e3d
              </li>
             ))}
           </ul>

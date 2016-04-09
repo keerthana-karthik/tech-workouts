@@ -7,11 +7,9 @@ import WorkoutContainer from 'containers/workouts'
 import WorkoutTech from 'containers/WorkoutTech'
 import SocialMediaContainer from 'containers/socialMediaContainer'
 
-//<Route path='/' component={MainLayout}/>
-
 export default () => {
   return (
-    <Route>]
+    <Route>
       <Route path = '/' component = {MainLayout}>
         <Route path = '/workouts' component = {WorkoutContainer} />
         <Route path = '/workouts/:technology' component = {WorkoutTech} />
