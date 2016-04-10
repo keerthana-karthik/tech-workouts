@@ -1,4 +1,5 @@
 var path = require('path');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   context: __dirname + '/src',
@@ -13,6 +14,14 @@ module.exports = {
   resolve: {
     root: [path.resolve(__dirname, 'src'), path.resolve(__dirname, 'node_modules')]
   },
+  plugins: [
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, 'data/'),
+        to: path.resolve(__dirname, 'dist/data')
+      }
+    ])
+  ],
   module: {
     preLoaders: [
       {
