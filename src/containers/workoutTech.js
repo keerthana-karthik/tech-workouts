@@ -17,6 +17,7 @@ export class WorkoutTech extends Component {
     this.getCurrentTechnology = this.getCurrentTechnology.bind(this);
     this.getCurrentContent= this.getCurrentContent.bind(this);
     this.loadContent = this.loadContent.bind(this);
+    this.initTechAndContent = this.initTechAndContent.bind(this);
     // Local state to maintain the index of lessons learnt
     // It makes no sense to store this in state tree. Hence storing it as 
     // local state in this component
@@ -33,7 +34,9 @@ export class WorkoutTech extends Component {
       currentContent: ''
     }
   }
-
+  componentWillMount() {
+    this.initTechAndContent() 
+  }
   // When the component is mounted, check if the workouts are loaded
   // If not dispatch the action to load the data
   componentDidMount() {
@@ -46,21 +49,11 @@ export class WorkoutTech extends Component {
   // When the component receive props
   // Update the local State
   componentWillReceiveProps(nextProps) {
-    let currentTech = this.getCurrentTechnology(nextProps);
-    let currentContent = this.getCurrentContent(currentTech);
-    let totalLessons = 0;
-    if(currentContent) {
-      totalLessons = currentContent.lessons.length;
-    }
-    this.setState({
-      currentTech,
-      currentContent,
-      totalLessons
-    })
+    this.initTechAndContent(nextProps);
   }
 
   // Get the current tech to work out based on the URL params
-  getCurrentTechnology(nextProps) {
+  getCurrentTechnology(nextProps = this.props) {
     let currentTechArray = nextProps.workouts && nextProps.workouts.filter((item) => (item.type === nextProps.params.technology));
     // Return the first element
     return currentTechArray && currentTechArray[0];
@@ -89,6 +82,21 @@ export class WorkoutTech extends Component {
       });
     }
     
+  }
+
+  // Initialize the current technology and content for the workout
+  initTechAndContent(nextProps) {
+    let currentTech = this.getCurrentTechnology(nextProps);
+    let currentContent = this.getCurrentContent(currentTech);
+    let totalLessons = 0;
+    if(currentContent) {
+      totalLessons = currentContent.lessons.length;
+    }
+    this.setState({
+      currentTech,
+      currentContent,
+      totalLessons
+    })
   }
   render() {
     let currentTech = this.state.currentTech;

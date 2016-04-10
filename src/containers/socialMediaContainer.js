@@ -2,30 +2,24 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-// User Components
-//import { action_1 } from 'redux/reducers/child_1'
-//import { load_data } from 'redux/reducers/api_call'
- 
 export class SocialMediaContainer extends Component {
   render() {
     return (
     <div className='container'>
       <p>This is a social media container</p>
+      <p>My idea is to have a twitter feed of famous persons/newletters in tech</p>
+      <p>For examples, this page can have live tweets from <a href='https://twitter.com/dan_abramov' target='_blank'>Dan Abramov</a> or <a href='https://twitter.com/JavaScriptDaily' target='_blank'>JavaScript Daily</a></p>
 
     </div>);
   }
 }
 
 SocialMediaContainer.propTypes = {
-  child_1: React.PropTypes.object.isRequired,
-  api_call: React.PropTypes.object.isRequired
+
 }
 
 function mapStateToProps(state) {
-  return {
-    child_1: state.child_1,
-    api_call: state.api_call
-  }
+  return state;
 }
 
 export default connect(mapStateToProps)(SocialMediaContainer)

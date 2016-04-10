@@ -26,13 +26,41 @@
     "name": "CSS",
     "description": "Let's beautify the internet",
     "subscribed": true,
-    "content": []
+    "content": [{
+            "id": "21",
+            "groupName": "Basics of CSS",
+            "groupDescription": "Learn the basics of CSS",
+            "completed": false,
+            "lessons": [{
+                "id": "111",
+                "fileUrl": "lessons/css/basics/basics-1.md",
+                "favorite": false
+                }, {
+                "id": "112",
+                "fileUrl": "lessons/css/basics/basics-2.md",
+                "favorite": false
+                }]
+        }]
     }, {
     "id": 3,
     "type": "html",
     "name": "HTML",
     "description": "Brick and Mortar of the web",
     "subscribed": true,
-    "content": []
+    "content": [{
+            "id": "31",
+            "groupName": "Basics of HTML",
+            "groupDescription": "Learn the basics of HTML",
+            "completed": false,
+            "lessons": [{
+                "id": "111",
+                "fileUrl": "lessons/html/basics/basics-1.md",
+                "favorite": false
+                }, {
+                "id": "112",
+                "fileUrl": "lessons/html/basics/basics-2.md",
+                "favorite": false
+                }]
+        }]
     }]
 }
