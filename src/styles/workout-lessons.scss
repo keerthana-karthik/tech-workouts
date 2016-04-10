@@ -1,0 +1,14 @@
+.markdown-viewer {
+  background: #212121;
+  height: 18.75rem;
+  overflow-y: auto;
+  &> div {
+    padding: 0.625rem;
+  }
+  margin: 0.625rem auto;
+  pre {
+    background: #444444;
+    border: 0;
+    color: #fff;
+  }
+}
