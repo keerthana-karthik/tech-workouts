@@ -1,0 +1,66 @@
+{
+  "workouts": [{
+    "id": 1,
+    "type": "javascript",
+    "name": "JavaScript",
+    "description": "One language to rule them all",
+    "subscribed": true,
+    "content": [{
+            "id": "11",
+            "groupName": "Basics of JavaScript",
+            "groupDescription": "Learn the basics of JavaScript",
+            "completed": false,
+            "lessons": [{
+                "id": "111",
+                "fileUrl": "lessons/javascript/basics/basics-1.md",
+                "favorite": false
+                }, {
+                "id": "112",
+                "fileUrl": "lessons/javascript/basics/basics-2.md",
+                "favorite": false
+                }]
+        }]
+    }, {
+    "id": 2,
+    "type": "css",
+    "name": "CSS",
+    "description": "Let's beautify the internet",
+    "subscribed": true,
+    "content": [{
+            "id": "21",
+            "groupName": "Basics of CSS",
+            "groupDescription": "Learn the basics of CSS",
+            "completed": false,
+            "lessons": [{
+                "id": "111",
+                "fileUrl": "lessons/css/basics/basics-1.md",
+                "favorite": false
+                }, {
+                "id": "112",
+                "fileUrl": "lessons/css/basics/basics-2.md",
+                "favorite": false
+                }]
+        }]
+    }, {
+    "id": 3,
+    "type": "html",
+    "name": "HTML",
+    "description": "Brick and Mortar of the web",
+    "subscribed": true,
+    "content": [{
+            "id": "31",
+            "groupName": "Basics of HTML",
+            "groupDescription": "Learn the basics of HTML",
+            "completed": false,
+            "lessons": [{
+                "id": "111",
+                "fileUrl": "lessons/html/basics/basics-1.md",
+                "favorite": false
+                }, {
+                "id": "112",
+                "fileUrl": "lessons/html/basics/basics-2.md",
+                "favorite": false
+                }]
+        }]
+    }]
+}
