@@ -15,7 +15,7 @@ const Header = ({ menus }) => (
             <span className = 'icon-bar'></span>
             <span className = 'icon-bar'></span>
           </button>
-          <a className = 'navbar-brand' href = '/'>Tech Workouts</a>
+          <a className = 'navbar-brand' href = 'http://subramaniashiva.github.io/tech-workouts/dist/index.html'>Tech Workouts</a>
         </div>
 
         <div className = 'pull-right nav-bar' id = 'top-bar-menu'>

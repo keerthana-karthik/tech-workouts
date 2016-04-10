@@ -32242,7 +32242,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'a',
-	            { className: 'navbar-brand', href: '/' },
+	            { className: 'navbar-brand', href: 'http://subramaniashiva.github.io/tech-workouts/dist/index.html' },
 	            'Tech Workouts'
 	          )
 	        ),
