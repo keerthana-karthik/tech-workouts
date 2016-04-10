@@ -11,6 +11,9 @@
   }
   .navbar-brand {
     font-size: 2rem;
+    &:hover {
+      color: inherit;
+    }
   }
   a {
     color: inherit;
