@@ -17,6 +17,7 @@
     "no-console": 0,
     "quotes": [2, "single"],
     "react/display-name": 0,
+    "react/no-danger": 0,
     "react/jsx-no-undef": 1,
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,

@@ -3,17 +3,13 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 // User Components
-import Header from 'layouts/header'
 //import { action_1 } from 'redux/reducers/child_1'
 //import { load_data } from 'redux/reducers/api_call'
  
 export class SocialMediaContainer extends Component {
   render() {
-    //const { dispatch } = this.props;
-    let menus = ['Workout', 'Read', 'Social'];
     return (
     <div className='container'>
-      <Header menus={menus}/>
       <p>This is a social media container</p>
 
     </div>);

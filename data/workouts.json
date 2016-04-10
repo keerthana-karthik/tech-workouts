@@ -5,7 +5,21 @@
     "name": "JavaScript",
     "description": "One language to rule them all",
     "subscribed": true,
-    "content": []
+    "content": [{
+            "id": "11",
+            "groupName": "Basics of JavaScript",
+            "groupDescription": "Learn the basics of JavaScript",
+            "completed": false,
+            "lessons": [{
+                "id": "111",
+                "fileUrl": "lessons/javascript/basics/basics-1.md",
+                "favorite": false
+                }, {
+                "id": "112",
+                "fileUrl": "lessons/javascript/basics/basics-2.md",
+                "favorite": false
+                }]
+        }]
     }, {
     "id": 2,
     "type": "css",
