@@ -1,0 +1,42 @@
+@import 'utils/constants.scss';
+
+.workout-cards {
+  padding: 0;
+  margin: 1%;
+  width: 31%;
+  &.javascript {
+    background: $js-color;
+    .card-footer-btn {
+      background: #847316;
+    }
+  }
+  &.css {
+    background: $css-color;
+    .card-footer-btn {
+      background: #175380;
+    }
+  }
+  &.html {
+    background: $html-color;
+    .card-footer-btn {
+      background: #90351E;
+    }
+  }
+  .card-head {
+    font-size: 2rem;
+    padding: 0.625rem 0.325rem;
+  }
+  .card-body {
+    min-height: 8rem;
+    font-size: 1rem;
+  }
+  .card-footer {
+    .card-footer-btn {
+      display: block;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: $secondary-color;
+      padding: 0.625rem;
+    }
+  }
+}
