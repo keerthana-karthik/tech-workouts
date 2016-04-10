@@ -17,7 +17,7 @@ export class Main extends Component {
       href: '/read'
     }, {
       name: 'Social',
-      href: '/social'
+      href: '/social-media'
     }];
     return (
     <div className='container'>
